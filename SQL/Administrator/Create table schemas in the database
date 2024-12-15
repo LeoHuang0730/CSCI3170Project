@@ -1,0 +1,41 @@
+-- SQL use in CSCI3170 PROJECT
+-- 5.1 Administrator
+
+-- Create table schema in the database
+
+CREATE TABLE Category (
+    category_id INT CHECK (category_id BETWEEN 1 AND 9) PRIMARY KEY,
+    category_name VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Manufacturer (
+    manufacturer_id INT CHECK (manufacturer_id BETWEEN 1 AND 99) PRIMARY KEY,
+    manufacturer_name VARCHAR(20) NOT NULL,
+    manufacturer_address VARCHAR(50) NOT NULL,
+    manufacturer_phone_no CHAR(8) CHECK (REGEXP_LIKE(manufacturer_phone_no, '^[1-9][0-9]{7}$')) NOT NULL
+);
+
+CREATE TABLE Part ( 
+    part_id INT CHECK (part_id BETWEEN 1 AND 999) PRIMARY KEY,
+    part_name VARCHAR(20) NOT NULL,
+    part_price INT CHECK (part_price BETWEEN 1 AND 99999) NOT NULL,
+    part_manufacturer_id INT CHECK (part_manufacturer_id BETWEEN 1 AND 99) NOT NULL REFERENCES manufacturer(manufacturer_id),
+    part_category_id INT CHECK (part_category_id BETWEEN 1 AND 9) NOT NULL REFERENCES category(category_id),
+    part_warranty INT CHECK (part_warranty BETWEEN 1 AND 99) NOT NULL,
+    part_available_quantity INT CHECK (part_available_quantity BETWEEN 0 AND 99) NOT NULL
+    );
+
+CREATE TABLE Salesperson (
+    salesperson_id INT CHECK (salesperson_id BETWEEN 1 AND 99) PRIMARY KEY,
+    salesperson_name VARCHAR(20) NOT NULL,
+    salesperson_address VARCHAR(50) NOT NULL,
+    salesperson_phone_no CHAR(8) CHECK (REGEXP_LIKE(salesperson_phone_no, '^[1-9][0-9]{7}$')) NOT NULL,
+    salesperson_experience INT CHECK (salesperson_experience BETWEEN 1 AND 9) NOT NULL
+);
+
+CREATE TABLE Transaction (
+    transaction_id INT CHECK (transaction_id BETWEEN 1 AND 9999) PRIMARY KEY,
+    transaction_part_id INT CHECK (transaction_part_id BETWEEN 1 AND 999) NOT NULL REFERENCES part(part_id),
+    transaction_salesperson_id INT CHECK (transaction_salesperson_id BETWEEN 1 AND 99) NOT NULL REFERENCES salesperson(salesperson_id),
+    transaction_date DATE NOT NULL
+);
