@@ -1,4 +1,4 @@
--- 2. Delete all tables
+--Delete All Table--
 DROP TABLE transaction CASCADE CONSTRAINTS;
 DROP TABLE salesperson CASCADE CONSTRAINTS;
 DROP TABLE part CASCADE CONSTRAINTS;

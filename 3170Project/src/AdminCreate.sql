@@ -1,4 +1,4 @@
--- 1. Create all tables
+--Create All Table--
 CREATE TABLE category (
                           cID NUMBER(1) PRIMARY KEY,
                           cName VARCHAR2(20) NOT NULL
