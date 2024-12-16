@@ -28,10 +28,10 @@ public class AdminOps {
 
             switch (adminChoice) {
                 case 1:
-                    executeSQLFile(conn, BASE_FOLDER_PATH + "src\\AdminCreate.sql");
+                    executeSQLFile(conn, BASE_FOLDER_PATH + "src\\adminCreate.sql");
                     break;
                 case 2:
-                    executeSQLFile(conn, BASE_FOLDER_PATH + "src\\AdminDelete.sql");
+                    executeSQLFile(conn, BASE_FOLDER_PATH + "src\\adminDelete.sql");
                     break;
                 case 3:
                     System.out.print("Enter the name of the folder containing the data files: ");

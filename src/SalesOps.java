@@ -47,7 +47,7 @@ public class SalesOps {
         int searchChoice = scanner.nextInt();
         scanner.nextLine(); // Consume the newline character
 
-        String sqlFile = (searchChoice == 1) ? "SearchPartName.sql" : "SearchManufacturerName.sql";
+        String sqlFile = (searchChoice == 1) ? "searchPartName.sql" : "searchManufacturerName.sql";
 
         System.out.print("Type in the Search Keyword: ");
         String keyword = scanner.nextLine();
@@ -91,8 +91,8 @@ public class SalesOps {
 
         try {
             // Check availability
-            String checkQuery = readSQLFile(SQL_FOLDER_PATH + "CheckPartAvailability.sql");
-            System.out.println("Executing SQL from file: CheckPartAvailability.sql");
+            String checkQuery = readSQLFile(SQL_FOLDER_PATH + "checkPartAvailability.sql");
+            System.out.println("Executing SQL from file: checkPartAvailability.sql");
             try (PreparedStatement checkStmt = conn.prepareStatement(checkQuery)) {
                 checkStmt.setInt(1, partID);
                 try (ResultSet rs = checkStmt.executeQuery()) {
@@ -102,8 +102,8 @@ public class SalesOps {
 
                         if (availableQuantity > 0) {
                             // Perform the transaction
-                            String updateQuery = readSQLFile(SQL_FOLDER_PATH + "SellPart.sql");
-                            System.out.println("Executing SQL from file: SellPart.sql");
+                            String updateQuery = readSQLFile(SQL_FOLDER_PATH + "sellPart.sql");
+                            System.out.println("Executing SQL from file: sellPart.sql");
                             try (PreparedStatement updateStmt = conn.prepareStatement(updateQuery)) {
                                 updateStmt.setInt(1, partID);
                                 updateStmt.executeUpdate();
