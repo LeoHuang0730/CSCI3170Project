@@ -34,7 +34,8 @@ List of files:<br>
 ./ojdbc10-19.24.0.0.jar<br>
 <br>
 Methods of compilation and execution:<br>
-<br>Compilation
+<br>
+Compilation
 1. Download the zip file of the project
 2. Unzip the zip file and put the extracted files in a folder
 3. Open IntelliJ IDEA
@@ -48,7 +49,8 @@ Methods of compilation and execution:<br>
 11. Click [Apply] at bottom right corner
 12. Click [OK] at bottom right corner
 13. At the [Project] panel at left hand side, change the current file to ./src/Main.java by double clicking ./src/Main.java
-14. Click the green triangle at top right corner to run ./src/Main.java<br>
-Execution
+14. Click the green triangle at top right corner to run ./src/Main.java
+<br>
+Execution<br>
 
 
