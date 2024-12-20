@@ -50,6 +50,21 @@ Compilation
 12. Click [OK] at bottom right corner
 13. At the [Project] panel at left hand side, change the current file to ./src/Main.java by double clicking ./src/Main.java
 14. Click the green triangle at top right corner to run ./src/Main.java
+
+Compilation in Terminal
+1. Download the zip file of the project
+2. Unzip the zip file and go into CSCI3170Project folder
+3. Compile the java files by running the following command in the terminal
+```
+javac -cp ojdbc10-19.24.0.0.jar src/*.java
+```
+Execution in Terminal
+1. After compilation, run the following command in the terminal
+```
+java -cp ojdbc10-19.24.0.0.jar src/Main.java
+```
+
+
 <br>
 Execution<br>
 
