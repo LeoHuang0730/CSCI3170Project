@@ -1,17 +1,17 @@
 Group Number: 7
 
-Name and SID of group members:
-Chin Tsz Yeung (SID: 1155176266)
-Huang Kwok Wai (SID: 1155175207)
-Lee Hing Tik (SID: 1155174697)
+Name and SID of group members:<br>
+Chin Tsz Yeung (SID: 1155176266)<br>
+Huang Kwok Wai (SID: 1155175207)<br>
+Lee Hing Tik (SID: 1155174697)<br>
 
-List of files:
-./sample_data
-./sample_data/category.txt
-./sample_data/manufacturer.txt
-./sample_data/part.txt
-./sample_data/salesperson.txt
-./sample_data/transaction.txt
+List of files:<br>
+./sample_data<br>
+./sample_data/category.txt<br>
+./sample_data/manufacturer.txt<br>
+./sample_data/part.txt<br>
+./sample_data/salesperson.txt<br>
+./sample_data/transaction.txt<br>
 
 ./src
 ./src/Main.java
