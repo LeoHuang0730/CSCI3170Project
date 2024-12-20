@@ -1,0 +1,10 @@
+1	Intel	2500 Augustine Dr, Santa Clara, CA, USA	27658001
+2	AMD	123 Innovation Way, Sunnyvale, CA, USA	27494001
+3	Asus	15 Li-Te Road, Taipei, Taiwan	87932400
+4	Gigabyte	22 Technology Ave, Taipei, Taiwan	89124001
+5	Corsair	123 Fremont Blvd, Fremont, CA, USA	28575519
+6	Seagate	123 Cupertino Ave, Cupertino, CA, USA	27324284
+7	Cooler Master	45 Innovation Dr, Taipei, Taiwan	27831299
+8	HP	123 Hanover St, Palo Alto, CA, USA	28575520
+9	Lenovo	200 Think Place, Morrisville, NC, USA	29684466
+10	ViewSonic	123 Display Rd, Brea, CA, USA	27512345
