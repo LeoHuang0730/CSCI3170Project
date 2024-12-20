@@ -57,8 +57,10 @@ public class ManagerOps {
         scanner.nextLine(); // Consume the newline character
         String order = (choice == 1) ? "ASC" : "DESC";
 
-        String query = readSQLFromFile(SQL_FOLDER_PATH + "listAllSalespersons.sql");
-        query = query.replace(":order", order);
+        // Dynamically construct the query with the order
+        String query = "SELECT sID, sName, sPhoneNumber, sExperience " +
+                "FROM salesperson " +
+                "ORDER BY sExperience " + order;
 
         try (Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
