@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class SalesOps {
 
-    private static final String SQL_FOLDER_PATH = "C:\\Users\\user\\Desktop\\3170Project\\src\\";
+    private static final String SQL_FOLDER_PATH = "./src/";
 
     public static void salesMenu(Scanner scanner, Connection conn) {
         boolean returnToMainMenu = false;

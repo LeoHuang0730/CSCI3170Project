@@ -5,7 +5,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class ManagerOps {
-    private static final String SQL_FOLDER_PATH = "C:\\Users\\user\\Desktop\\3170Project\\src\\";
+    private static final String SQL_FOLDER_PATH = "./src/";
 
     public static void managerMenu(Scanner scanner, Connection conn) {
         boolean returnToMainMenu = false;
