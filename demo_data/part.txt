@@ -1,10 +1,10 @@
-1	Intel Core i5-13400	1200	1	1	36	120
-2	AMD Ryzen 5 7600X	1600	2	1	36	100
-3	Asus ROG STRIX B550-F	1050	3	2	24	50
-4	Corsair Vengeance 16GB	800	5	3	60	200
-5	Seagate FireCuda 2TB	1500	6	4	60	90
-6	Cooler Master Hyper 212	500	7	11	24	300
-7	ViewSonic VX3276-4K-MHD	3000	10	10	36	40
-8	Lenovo Legion 5 Pro	8500	9	9	18	25
-9	HP Pavilion x360	7500	8	9	18	30
-10	Asus TUF Gaming RTX 4060	2500	3	6	36	60
+    1	Intel Core i5-13400	1200	1	1	36	99
+    2	AMD Ryzen 5 7600X	1600	2	1	36	98
+    3	Asus ROG STRIX B550	1050	3	2	24	50
+    4	Corsair Vengeance8GB	800	5	3	60	97
+    5	Seagate FireCuda 2TB	1500	6	4	60	90
+    6	Cooler Master Hyper	500	7	8	24	96
+    7	ViewSonic VX3276-4K	3000	9	9	36	40
+    8	Lenovo Legion 5 Pro	8500	9	9	18	25
+    9	HP Pavilion x360	7500	8	9	18	30
+    10	Asus Gaming RTX 4060	2500	3	6	36	60
