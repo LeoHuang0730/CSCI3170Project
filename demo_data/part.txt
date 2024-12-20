@@ -4,7 +4,7 @@
     4	Corsair Vengeance8GB	800	5	3	60	97
     5	Seagate FireCuda 2TB	1500	6	4	60	90
     6	Cooler Master Hyper	500	7	8	24	96
-    7	ViewSonic VX3276-4K	3000	9	9	36	40
+    7	ViewSonic VX3276-4K	3000	10	9	36	40
     8	Lenovo Legion 5 Pro	8500	9	9	18	25
     9	HP Pavilion x360	7500	8	9	18	30
     10	Asus Gaming RTX 4060	2500	3	6	36	60
