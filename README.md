@@ -46,4 +46,6 @@ Methods of compilation and execution:<br>
 10. Select ojdbc10-19.24.0.0.jar
 11. Click [Apply] at bottom right corner
 12. Click [OK] at bottom right corner
+13. At the [Project] panel at left hand side, change the current file to ./src/Main.java by double clicking ./src/Main.java
+14. Click the green triangle at top right corner to run ./src/Main.java
 
