@@ -35,10 +35,9 @@ List of files:<br>
 <br>
 Methods of compilation and execution:<br>
 <br>
-Compilation
+Compilation in IntelliJ IDEA
 1. Download the zip file of the project
 2. Unzip the zip file and put the extracted files in a folder
-3. Open IntelliJ IDEA
 4. In IntelliJ IDEA, open the folder with the extracted files
 5. Hover on [File] of IntelliJ IDEA top tool bar
 6. Click on [Project Structure]
