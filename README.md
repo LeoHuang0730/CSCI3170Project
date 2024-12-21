@@ -33,22 +33,6 @@ List of files:<br>
 <br>
 ./ojdbc10-19.24.0.0.jar<br>
 <br>
-Methods of compilation and execution:<br>
-<br>
-Compilation in IntelliJ IDEA
-1. Download the zip file of the project
-2. Unzip the zip file and put the extracted files in a folder
-4. In IntelliJ IDEA, open the folder with the extracted files
-5. Hover on [File] of IntelliJ IDEA top tool bar
-6. Click on [Project Structure]
-7. Click on [Libraries] under [Project Settings] tab
-8. Click on the [+] button
-9. Under [Add Project Library], [select Java]
-10. Select ./ojdbc10-19.24.0.0.jar
-11. Click [Apply] at bottom right corner
-12. Click [OK] at bottom right corner
-13. At the [Project] panel at left hand side, change the current file to ./src/Main.java by double clicking ./src/Main.java
-14. Click the green triangle at top right corner to run ./src/Main.java
 
 Compilation in Terminal
 1. Download the zip file of the project
@@ -57,14 +41,13 @@ Compilation in Terminal
 ```
 javac -cp ojdbc10-19.24.0.0.jar src/*.java
 ```
+<br>
+
 Execution in Terminal
 1. After compilation, run the following command in the terminal
 ```
 java -cp ojdbc10-19.24.0.0.jar src/Main.java
 ```
 
-
-<br>
-Execution<br>
 
 
