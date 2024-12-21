@@ -8,3 +8,4 @@
     8	Lenovo Legion 5 Pro	8500	9	9	18	25
     9	HP Pavilion x360	7500	8	9	18	30
     10	Asus Gaming RTX 4060	2500	3	6	36	60
+    11	Asus Gaming RTX 4070	3500	3	6	36	60
