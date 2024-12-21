@@ -1,3 +1,7 @@
 ﻿.idea
 out
 CSCI3170GitHub.iml
+src/AdminOps.class
+src/Main.class
+src/ManagerOps.class
+src/SalesOps.class
