@@ -10,4 +10,4 @@ FROM part p
      manufacturer m ON p.mID = m.mID
          JOIN
      category c ON p.cID = c.cID
-WHERE LOWER(p.pName) LIKE LOWER(?) -- Partial matching for part name
+WHERE LOWER(p.pName) LIKE LOWER(?)
