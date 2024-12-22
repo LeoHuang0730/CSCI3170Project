@@ -35,9 +35,10 @@ List of files:<br>
 <br>
 
 Compilation in Terminal
-1. Download the zip file of the project
-2. Unzip the zip file and go into CSCI3170Project folder
-3. Compile the java files by running the following command in the terminal
+1. Setup Java JDK environment in your computer
+2. Download the zip file of the project
+3. Unzip the zip file and go into CSCI3170Project folder
+4. Compile the java files by running the following command in the terminal
 ```
 javac -cp ojdbc10-19.24.0.0.jar src/*.java
 ```
