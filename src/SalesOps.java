@@ -61,14 +61,9 @@ public class SalesOps {
         String orderByClause = (orderChoice == 1) ? "ASC" : "DESC";
 
         try {
-            // Read the base query from the SQL file without an ORDER BY clause
-            String baseQuery = readSQLFile(SQL_FOLDER_PATH + sqlFile);
+            String query = readSQLFile(SQL_FOLDER_PATH + sqlFile) + " ORDER BY p.pPrice " + ((orderChoice == 1) ? "ASC" : "DESC");
 
-            // Dynamically append the ORDER BY clause
-            String query = baseQuery + " ORDER BY p.pPrice " + orderByClause;
 
-            // Log SQL file execution
-            System.out.println("Executing SQL from file: " + sqlFile);
 
             // Prepare and execute the query
             try (PreparedStatement pstmt = conn.prepareStatement(query)) {
