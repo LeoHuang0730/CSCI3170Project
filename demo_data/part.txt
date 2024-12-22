@@ -1,4 +1,4 @@
-    1	Intel Core i5-13400	1200	1	1	36	0
+    1	Intel Core i5-13400	1200	1	1	36	1
     2	AMD Ryzen 5 7600X	1600	2	1	36	98
     3	Asus ROG STRIX B550	1050	3	2	24	50
     4	Corsair Vengeance8GB	800	5	3	60	97

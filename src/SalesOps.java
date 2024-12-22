@@ -8,6 +8,18 @@ public class SalesOps {
 
     private static final String SQL_FOLDER_PATH = "./src/";
 
+    private static int generateTransactionID(Connection conn) throws SQLException {
+        String query = "SELECT COALESCE(MAX(tID), 0) + 1 AS nextID FROM transaction";
+        try (Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
+            if (rs.next()) {
+                return rs.getInt("nextID");
+            } else {
+                throw new SQLException("Failed to generate transaction ID.");
+            }
+        }
+    }
+
     public static void salesMenu(Scanner scanner, Connection conn) {
         boolean returnToMainMenu = false;
 
@@ -103,6 +115,16 @@ public class SalesOps {
                                 updateStmt.setInt(1, partID);
                                 updateStmt.executeUpdate();
                                 System.out.println("Product: " + partName + " (id: " + partID + ") Remaining Quantity: " + (availableQuantity - 1));
+                            }
+                            // Add transaction record
+                            int transactionID = generateTransactionID(conn); // Method to generate unique ID
+                            String transactionQuery = readSQLFile(SQL_FOLDER_PATH + "insertTransaction.sql");
+                            try (PreparedStatement transactionStmt = conn.prepareStatement(transactionQuery)) {
+                                transactionStmt.setInt(1, transactionID); // tID
+                                transactionStmt.setInt(2, partID);       // pID
+                                transactionStmt.setInt(3, salespersonID);// sID
+                                transactionStmt.executeUpdate();
+                                System.out.println("Transaction recorded with ID: " + transactionID);
                             }
                         } else {
                             System.out.println("Error: Part is out of stock.");
